@@ -1,0 +1,16 @@
+[package]
+name = "nm_rquickjs"
+version = "0.1.0"
+edition = "2024"
+description = "rquickjs Native Messaging host"
+authors = [ "guest271314" ]
+
+[dependencies]
+rquickjs = { version = "0.14.0" }
+
+[profile.release]
+opt-level = "z"     # Optimize for size.
+lto = true          # Enable Link Time Optimization
+codegen-units = 1   # Reduce number of codegen units to increase optimizations.
+panic = "abort"     # Abort on panic
+strip = true        # Automatically strip symbols from the binary.
