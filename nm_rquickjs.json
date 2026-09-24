@@ -1,0 +1,9 @@
+{
+  "name": "nm_rquickjs",
+  "description": "rquickjs Native Messaging Host",
+  "path": "/ABSOLUTE/PATH/TO/native-messaging-rquickjs/nm_rquickjs",
+  "type": "stdio",
+  "allowed_origins": [
+    ""
+  ]
+}
